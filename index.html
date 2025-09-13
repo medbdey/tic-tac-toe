@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>tic tac toe</title>
 </head>
 <body>
+<div class="container">
+    <div class="head" id="head">
+    <span id="title"> X O</span>
+    Game
+ </div>
+    <p id="playerOne" style="color: black; font-size: 50px;" ></p><span id="playerOneScore"></span>
+    <p id="playerTwo" style="color: black; font-size: 50px;"></p><span id="playerTwoScore"></span>
+    <div class="gameBoard">
+    <div class="square" id="item1" onclick="game(this.id)"></div>
+    <div class="square" id="item2" onclick="game(this.id)"></div>
+    <div class="square" id="item3" onclick="game(this.id)"></div>
+    <div class="square" id="item4" onclick="game(this.id)"></div>
+    <div class="square" id="item5" onclick="game(this.id)"></div>
+    <div class="square" id="item6" onclick="game(this.id)"></div>
+    <div class="square" id="item7" onclick="game(this.id)"></div>
+    <div class="square" id="item8" onclick="game(this.id)"></div>
+    <div class="square" id="item9" onclick="game(this.id)"></div>
+    <button type="button" id="playAgain">Play Again?</button>
+</div>
 
+</div>
 <script src="script.js"></script>
 </body>
 </html>

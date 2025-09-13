@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    padding: 3rem;
+}
+.head span{
+    color: yellow;
+    margin-right: 1rem;
+}
+.gameBoard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 3rem;
+}
+.head{
+    padding: 2rem;
+    font-size: 30px;
+    text-align: center;
+    width: 500px;
+    background-color: #f36868 ;
+    position: relative;
+    left: 12rem;
+}
+.square{
+    background-color: #ff7070;
+    width: 300px;
+    height: 250px;
+    font-size: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+.square:hover{
+    background-color: rgb(0, 0, 0);
+}
+button{
+    display: none;
+    padding: 2rem;
+    font-size: 40px;
+    background-color: #f36868;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 2em;
+    left: 19rem;
+}
+button:hover{
+    background-color: black;
+}
+#playerOneScore{
+    color: black;
+    font-size: 50px;
+
+}
+#playerTwoScore{
+    color: black;
+    font-size: 50px;
+}
