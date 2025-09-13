@@ -87,6 +87,39 @@ function winning(){
         }
         
         playAgain.style.display = 'block'
+    }else if (squares[1] != '' && squares[1] === squares[4] && squares[4]===squares[7]){
+        let winner = squares[1];
+         if (winner == 'x'){
+         head.textContent = playerOne.textContent + '  you win'; 
+          Number(playerOneScore.textContent++)  
+          gameOver = true
+        }else if (winner == 'o'){
+            head.textContent = playerTwo.textContent + '  you win'
+             Number(playerTwoScore.textContent++) 
+             gameOver = true
+        }playAgain.style.display = 'block'
+    }else if (squares[3] != '' && squares[3] === squares[6] && squares[6] === squares[9]){
+            let winner = squares[3];
+         if (winner == 'x'){
+         head.textContent = playerOne.textContent + '  you win'; 
+          Number(playerOneScore.textContent++)  
+          gameOver = true
+        }else if (winner == 'o'){
+            head.textContent = playerTwo.textContent + '  you win'
+             Number(playerTwoScore.textContent++) 
+             gameOver = true
+        }playAgain.style.display = 'block'
+    }else if (squares[2] != '' && squares[2] === squares[5] && squares[5] === squares[8]){
+            let winner = squares[2];
+         if (winner == 'x'){
+         head.textContent = playerOne.textContent + '  you win'; 
+          Number(playerOneScore.textContent++)  
+          gameOver = true
+        }else if (winner == 'o'){
+            head.textContent = playerTwo.textContent + '  you win'
+             Number(playerTwoScore.textContent++) 
+             gameOver = true
+        }playAgain.style.display = 'block'
     }
     else{
         playAgain.style.display = 'none';
