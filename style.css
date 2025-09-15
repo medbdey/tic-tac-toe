@@ -20,16 +20,16 @@ body{
 }
 .head{
     padding: 2rem;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     width: 500px;
     background-color: #f36868 ;
     position: relative;
-    left: 12rem;
+    left: 6rem;
 }
 .square{
     background-color: #ff7070;
-    width: 300px;
+    width: 240px;
     height: 250px;
     font-size: 150px;
     text-align: center;
@@ -41,7 +41,7 @@ body{
 button{
     display: none;
     padding: 2rem;
-    font-size: 20px;
+    font-size: 30px;
     background-color: #f36868;
     color: white;
     border-radius: 30px;
@@ -62,4 +62,14 @@ button:hover{
 #playerTwoScore{
     color: black;
     font-size: 30px;
+}
+.players{
+    display: flex;
+    column-gap: 2rem;
+    position: absolute;
+    left: 4rem;
+}
+.spa{
+    position: relative;
+    top: 2rem;
 }
