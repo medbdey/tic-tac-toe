@@ -7,6 +7,7 @@ body{
 }
 .container{
     padding: 3rem;
+    display: none;
 }
 .head span{
     color: yellow;
@@ -65,11 +66,40 @@ button:hover{
 }
 .players{
     display: flex;
-    column-gap: 2rem;
+    flex-direction: column;
     position: absolute;
     left: 4rem;
 }
 .spa{
     position: relative;
-    top: 2rem;
+}
+#names{
+    display: flex;
+    column-gap: 2rem;
+    position: relative;
+    top: 5rem;
+}
+#names input{
+    padding: .8rem;
+    width: 11rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #ee4444;
+    outline: #f36868;
+    color: white;
+
+}
+input::placeholder{
+    color: #f0b6b6;
+    font-size: 13px;
+}
+#start{
+    display: inline;
+    padding: 1rem;
+    font-size: 15px;
+    position: static;
+    background-color: #ee4444;
+}
+#start:hover{
+    background-color: rgb(0, 0, 0);
 }

@@ -8,9 +8,25 @@ let playerTwo = document.getElementById('playerTwo');
 let playAgain = document.getElementById('playAgain');
 let playerOneScore = document.getElementById('playerOneScore');
 let playerTwoScore = document.getElementById('playerTwoScore');
+let names = document.getElementById('names');
+let playerOneName = document.getElementById('playerOneName')
+let playerTwoName = document.getElementById('playerTwoName')
+let startBtn = document.getElementById('start')
 playerOneScore.textContent = 0;
 playerTwoScore.textContent = 0;
 let gameOver = false;
+startBtn.addEventListener('click', ()=>{
+      if(playerOneName.value == '' || playerTwoName.value == '' ){
+        return;
+    }
+    playerOne.textContent = playerOneName.value;
+    playerTwo.textContent = playerTwoName.value;
+    let container = document.getElementById('container');
+    container.style.display = 'block';
+    names.style.display = 'none';
+  
+
+})
 function winning(){
     for (let i = 1; i <= 9; i++) { 
         squares[i] = document.getElementById('item' + i).textContent;
@@ -125,14 +141,8 @@ function winning(){
         playAgain.style.display = 'none';
     }
 }
-function names(name, name2){
-   let name1 = prompt('write your name player one');
-   let nameTwo = prompt('write your name player two');
-   playerOne.textContent = name1;
-   playerTwo.textContent = nameTwo;
-}
 
-names()
+
 function game(id){
     let element = document.getElementById(id);
     if(gameOver) return;

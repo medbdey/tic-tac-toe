@@ -7,7 +7,7 @@
     <title>tic tac toe</title>
 </head>
 <body>
-<div class="container">
+<div class="container" id="container">
     <div class="head" id="head">
     <span id="title"> X O</span>
     Game
@@ -28,7 +28,11 @@
     <div class="square" id="item9" onclick="game(this.id)"></div>
     <button type="button" id="playAgain">Play Again?</button>
 </div>
-
+</div>
+<div id="names">
+    <input type="text" id="playerOneName" placeholder="Write your name playerOne" >
+    <input type="text" id="playerTwoName" placeholder="Write your name playerTwo" >
+    <button type="submit" id="start">Start the game</button>
 </div>
 <script src="script.js"></script>
 </body>
